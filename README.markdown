@@ -1,7 +1,7 @@
 #MultiPass SSO Authentication plugin for Redmine (v 0.0.1)
 
 This plugin is based on MultiPass gem (https://github.com/entp/multipass) and allows
-users to login to the application with Single Sign On (SSO) link.
+users to register and login to the application with Single Sign On (SSO) link.
 Configuration on both sides (Redmine and Custom app) is needed. Please read Configuration
 instruction.
 
