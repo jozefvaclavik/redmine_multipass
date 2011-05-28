@@ -6,6 +6,14 @@ users to login to the application with Single Sign On (SSO) link.
 Configuration on both sides (Redmine and Custom app) is needed. Please read Configuration
 instruction.
 
+Requirements
+=======
+
+This plugin requires MultiPass gem installed.
+
+gem install multipass
+
+
 Installation
 =======
 

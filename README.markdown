@@ -5,6 +5,15 @@ users to login to the application with Single Sign On (SSO) link.
 Configuration on both sides (Redmine and Custom app) is needed. Please read Configuration
 instruction.
 
+##Requirements
+This plugin requires MultiPass gem installed.
+<pre><code>
+
+gem install multipass
+
+</code></pre>
+
+
 ##Installation
 
 <pre><code>
@@ -49,7 +58,9 @@ end
 **Assume that @user is currently logged in user**
 
 <pre><code>
+	
 <%= link_to( "Open Redmine", "http://link_to_your_redmine_app/multipass/?sso=#{CGI.escape(@user.multipass)}") %>
+
 </code></pre>
 
 Known issues
