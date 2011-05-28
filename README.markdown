@@ -36,6 +36,7 @@ gem install multipass
 
 ###Custom app: EXAMPLE USSAGE
 - In User.rb model:
+**site_key and sso_api_key are string values from redmine settings**
 
 <pre><code>
 def self.multipass

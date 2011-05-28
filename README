@@ -38,7 +38,7 @@ Redmine:
 
 Custom app: EXAMPLE USSAGE
 - In User.rb model:
-**site_key and sso_api_key are string values from redmine settings**
+site_key and sso_api_key are string values from redmine settings
 
 def self.multipass
   @multipass ||= MultiPass.new(site_key, sso_api_key)
