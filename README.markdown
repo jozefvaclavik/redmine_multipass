@@ -15,7 +15,7 @@ gem install multipass
 ##Installation
 
 <pre><code>
-1. cd vendor/plugins; git clone git://github.com/user_name/name_of_the_plugin.git
+1. cd vendor/plugins; git://github.com/jozefvaclavik/redmine_multipass.git
 2. cd ../..; rake db:migrate:plugins RAILS_ENV=production
 3. restart redmine
 </code></pre>
