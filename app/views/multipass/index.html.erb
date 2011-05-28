@@ -1,0 +1,8 @@
+Debug mode:<br /><hr />
+<%= @sso %>
+<br /><br /><hr />
+<% @data.each_pair do |k,v| %>
+	<%= "#{k}: #{v}" %><br />
+<% end %>
+<br /><hr />
+User match: <%= @usr.nil? ? "None!" : @usr.login %>

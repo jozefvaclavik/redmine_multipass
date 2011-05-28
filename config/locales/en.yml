@@ -1,0 +1,19 @@
+# English strings
+en:
+  multipass_enable_label: Enable MultiPass SSO Authentication
+  multipass_is_disabled: MultiPass SSO Authentication is disabled
+  multipass_debug_label: Enable Debug mode (this will display decrypted information from SSO url instead of performing users login/register)
+  multipass_autoregistration_label: Enable auto registration for new users
+  multipass_supportemail_label: Support contact (email) for users when SSO Auth crash
+  multipass_group_id_label: Choose group for users
+  multipass_group_id_missing: Create a new group for users
+  multipass_sso_api_key_label: SSO Api Key
+  multipass_sso_api_key_regenerate: Generate a Key
+  multipass_site_key_label: Site Key
+  multipass_account_created: "Your account has been created and activated."
+  multipass_account_created_fail: "Your account couldnt be created, please try to set up different email in your base application. If the problem persist, please contact your administrator."
+  multipass_error_decrypt: The MultiPass token was not able to be decrypted
+  multipass_error_json: The decrypted MultiPass token is not valid JSON
+  multipass_error_expired: The MultiPass token has expired
+  multipass_error_empty_sso: SSO value is missing
+  multipass_error_missing_keys: Please check your settings and configure your keys.

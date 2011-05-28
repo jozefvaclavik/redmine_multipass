@@ -1,0 +1,20 @@
+# Slovak strings
+sk:
+  multipass_enable_label: Povoliť MultiPass SSO Autentifikáciu
+  multipass_is_disabled: MultiPass SSO Autentifikácia nie je povolená
+  multipass_debug_label: Povoliť Debug režim (tento režim zobrazí dešifrované informácie z SSO linky namiesto vykonania samotného prihlásenia/registrácie)
+  multipass_autoregistration_label: Povoliť automatickú registráciu pre nových používateľov
+  multipass_supportemail_label: Kontakt (email) na podporu v prípade že Autentifikácia je neúspešná
+  multipass_group_id_label: Zvoľte skupinu pre používateľov
+  multipass_group_id_missing: Vytvorte novú skupinu pre používateľov
+  multipass_sso_api_key_label: SSO Api Kľúč
+  multipass_sso_api_key_regenerate: Vygenerovať nový kľúč
+  multipass_site_key_label: Kľúč stránky
+  multipass_account_created: "Vaše konto bolo vytvorené a aktivované."
+  multipass_account_created_fail: "Your account couldnt be created, please try to set up different email in your base application. If the problem persist, please contact your administrator."
+  multipass_account_created_fail: "Vaše konto nemohlo byť vytvorené, prosím skúste si nastaviť iný email v aplikácii z ktorej sa prihlasujete. Pokiaľ Váš problém pretrváva, prosím kontaktujte Vášho administrátora."
+  multipass_error_decrypt: MultiPass nebolo možné dešifrovať
+  multipass_error_json: Dešifrovaný MultiPass nie je validný
+  multipass_error_expired: Platnosť MultiPass vypršala
+  multipass_error_empty_sso: Chýba hodnota SSO
+  multipass_error_missing_keys: Prosím skontrolujte Vaše nastavenia a nastavte kľúče pre komunikáciu.

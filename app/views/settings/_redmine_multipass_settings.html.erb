@@ -1,0 +1,45 @@
+<%
+def user_group_field_config(option_name, field_format, current_value)
+  label = content_tag(:label, l("multipass_#{option_name}_label".to_sym))
+  data = Group.find(:all, :order => 'lastname')
+  unless data.empty?
+    select = select_tag("settings[#{option_name}]",
+                        content_tag(:option, '') +
+                        options_from_collection_for_select(data, :id, :lastname, current_value))
+  else
+    select = link_to(l(:multipass_group_id_missing, :field_format => field_format.capitalize),
+                     :controller => 'groups', :action => 'new')
+  end
+  return content_tag(:p, label + select)
+end
+%>
+
+<fieldset>
+	<p>
+	  <%=content_tag(:label, l(:multipass_enable_label))%>
+	  <%=check_box_tag 'settings[enable]', true, @settings['enable'] == "true" %>
+	</p>
+	<p>
+	  <%=content_tag(:label, l(:multipass_debug_label))%>
+	  <%=check_box_tag 'settings[debug]', true, @settings['debug'] == "true" %>
+	</p>
+	<p>
+	  <%=content_tag(:label, l(:multipass_autoregistration_label))%>
+	  <%=check_box_tag 'settings[autoregistration]', true, @settings['autoregistration'] == "true" %>
+	</p>
+	<p>
+	  <%=content_tag(:label, l(:multipass_supportemail_label))%>
+	  <%=text_field_tag 'settings[supportemail]', @settings['supportemail'] %>
+	</p>
+	<p>
+  	<%= user_group_field_config('group_id', 'string', @settings['group_id'].to_i) %>
+	</p>
+	<p>
+	  <%=content_tag(:label, l(:multipass_sso_api_key_label))%>
+	  <%=text_field_tag 'settings[sso_api_key]', @settings['sso_api_key'], :style => "width:350px" %>&nbsp;<%= link_to l(:multipass_sso_api_key_regenerate), "#", :onclick => "$('settings_sso_api_key').value = randomKey(128);" %>	
+	</p>
+	<p>
+	  <%=content_tag(:label, l(:multipass_site_key_label))%>
+	  <%=text_field_tag 'settings[site_key]', @settings['site_key'] %>
+	</p>
+</fieldset>
