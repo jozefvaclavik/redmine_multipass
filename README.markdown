@@ -8,9 +8,7 @@ instruction.
 ##Requirements
 This plugin requires MultiPass gem installed.
 <pre><code>
-
 gem install multipass
-
 </code></pre>
 
 
@@ -58,9 +56,7 @@ end
 **Assume that @user is currently logged in user**
 
 <pre><code>
-	
-<%= link_to( "Open Redmine", "http://link_to_your_redmine_app/multipass/?sso=#{CGI.escape(@user.multipass)}") %>
-
+link_to( "Open Redmine", "http://link_to_your_redmine_app/multipass/?sso=#{CGI.escape(@user.multipass)}")
 </code></pre>
 
 Known issues
