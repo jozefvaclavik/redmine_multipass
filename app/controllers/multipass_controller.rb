@@ -109,8 +109,7 @@ class MultipassController < ApplicationController
     @user.language = Setting.default_language
     # login has to be unique
     # in case that it already exist, it has to be changed
-    @user.valid?
-    unless @user.errors[:login].empty?
+    if !@user.valid? and !@user.errors[:login].empty?
       login = ""
       u = User.new
       u.valid?
