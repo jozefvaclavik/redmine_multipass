@@ -60,6 +60,10 @@ end
 link_to( "Open Redmine", "http://link_to_your_redmine_app/multipass/?sso=#{CGI.escape(@user.multipass)}")
 </code></pre>
 
+###PHP Support:
+If your custom application is based on PHP, take a look at Tomdchi PHP version of multipass library. https://github.com/tomdchi/Redmine-PHP-MultiPass
+
+
 Known issues
 =======
 
