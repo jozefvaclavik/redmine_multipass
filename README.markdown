@@ -11,6 +11,11 @@ This plugin requires MultiPass gem installed.
 gem install multipass
 </code></pre>
 
+For redmine 1.3 and newer:
+Edit your Gemfile and add there
+<pre><code>
+gem 'multipass'
+</code></pre>
 
 ##Installation
 
@@ -18,6 +23,17 @@ gem install multipass
 1. cd vendor/plugins; git clone git://github.com/jozefvaclavik/redmine_multipass.git
 2. cd ../..; rake db:migrate:plugins RAILS_ENV=production
 3. restart redmine
+</code></pre>
+
+For redmine 1.3 and newer:
+Because redmine from 1.4 version will not support wildchart routes, you need to add
+your routes manually (I had same experience with Redmine 1.3.x). Edit config/routes.rb
+and add AFTER first line these four lines.
+<pre><code>
+map.connect 'multipass', :controller => 'multipass', :action => 'index'
+map.connect 'multipass/index', :controller => 'multipass', :action => 'index'
+map.connect 'multipass/successful_authentication', :controller => 'multipass', :action => 'successful_authentication'
+map.connect 'multipass/register', :controller => 'multipass', :action => 'register'
 </code></pre>
 
 ##Configuration
