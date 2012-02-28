@@ -26,7 +26,7 @@ gem 'multipass'
 ###For redmine 1.3 and newer:
 Because redmine from 1.4 version will not support wildchart routes, you need to add
 your routes manually (I had same experience with Redmine 1.3.x). Edit config/routes.rb
-and add AFTER first line these four lines.
+and add these four lines AFTER first line.
 <pre><code>
 map.connect 'multipass', :controller => 'multipass', :action => 'index'
 map.connect 'multipass/index', :controller => 'multipass', :action => 'index'
