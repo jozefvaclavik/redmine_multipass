@@ -7,11 +7,9 @@ instruction.
 
 ##Requirements
 This plugin requires MultiPass gem installed.
-<pre><code>
-gem install multipass
-</code></pre>
+<pre><code>gem install multipass</code></pre>
 
-For redmine 1.3 and newer:
+###For redmine 1.3 and newer:
 Edit your Gemfile and add there
 <pre><code>
 gem 'multipass'
@@ -25,7 +23,7 @@ gem 'multipass'
 3. restart redmine
 </code></pre>
 
-For redmine 1.3 and newer:
+###For redmine 1.3 and newer:
 Because redmine from 1.4 version will not support wildchart routes, you need to add
 your routes manually (I had same experience with Redmine 1.3.x). Edit config/routes.rb
 and add AFTER first line these four lines.
