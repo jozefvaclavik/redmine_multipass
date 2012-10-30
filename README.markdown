@@ -1,3 +1,7 @@
+#WARNING! No longer under active development
+
+Feel free to submit patches via pull requests. I will review them and merge.
+
 #MultiPass SSO Authentication plugin for Redmine (v 0.0.1)
 
 This plugin is based on MultiPass gem (https://github.com/entp/multipass) and allows
