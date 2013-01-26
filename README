@@ -39,6 +39,17 @@ map.connect 'multipass/index', :controller => 'multipass', :action => 'index'
 map.connect 'multipass/successful_authentication', :controller => 'multipass', :action => 'successful_authentication'
 map.connect 'multipass/register', :controller => 'multipass', :action => 'register'
 
+Note for 2.2 users : this plugin still works, but needs some modifications :
+1. cd plugins; git clone git://github.com/jozefvaclavik/redmine_multipass.git
+2. cd ..; # Edit Gemfile to add "gem 'multipass'" as describe above
+3. # edit plugins/redmine_multipass/init.rb to comment "require 'dispatcher'" and the two last lines
+4. # edit config/routes.rb to add the routes as follows
+  match 'multipass', :controller => 'multipass', :action => 'index'
+  match 'multipass/index', :controller => 'multipass', :action => 'index'
+  match 'multipass/successful_authentication', :controller => 'multipass', :action => 'successful_authentication'
+  match 'multipass/register', :controller => 'multipass', :action => 'register'
+5.  rake redmine:plugins:migrate RAILS_ENV=production
+6. restart redmine
 
 Configuration
 =======
