@@ -1,5 +1,4 @@
 require 'redmine'
-require 'dispatcher'
 require 'multipass'
  
 Redmine::Plugin.register :redmine_multipass do
@@ -19,7 +18,4 @@ Redmine::Plugin.register :redmine_multipass do
       'sso_api_key' => '',
       'site_key' => ''
     }
-end
-
-Dispatcher.to_prepare do
 end
