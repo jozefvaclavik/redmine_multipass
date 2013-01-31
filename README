@@ -5,6 +5,7 @@ Feel free to submit patches via pull requests. I will review them and merge.
 For redmine 1.4 and older, see the right branch/tag, this one is suitable for 2.2
 
 MultiPass SSO Authentication plugin for Redmine (v 0.0.1)
+
 =======
 
 This plugin is based on MultiPass gem (https://github.com/entp/multipass) and allows
@@ -27,9 +28,8 @@ Installation
 =======
 
 1. cd plugins; git clone git://github.com/jozefvaclavik/redmine_multipass.git
-2. cd ..; # Don't forget to edit Gemfile to add "gem 'multipass'" as describe above
-3. rake redmine:plugins:migrate RAILS_ENV=production
-4. restart redmine
+2. cd ..; rake redmine:plugins:migrate RAILS_ENV=production
+3. restart redmine
 
 Edit config/routes.rb and add these four lines AFTER first line.
 
